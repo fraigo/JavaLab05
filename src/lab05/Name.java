@@ -4,11 +4,17 @@ public class Name {
 
 	String name;
 	
-	public Name(String name) {
+	public Name(String name) throws Exception{
 		setName(name);
 	}
 	
-	public void setName(String name) {
+	public void setName(String name) throws Exception{
+		if (name==null){
+			throw new InvalidArgumentException("String must not be null");
+		}
+		if (name.length()==0){
+			throw new InvalidArgumentException("String must not be empty");
+		}
 		this.name = name;
 	}
 	
