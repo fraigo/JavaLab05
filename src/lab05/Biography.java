@@ -1,18 +1,43 @@
 package lab05;
 
+/**
+ * Biography Class
+ * @author Francisco Igor
+ *
+ */
 public class Biography extends Book {
 	
+	/**
+	 * Biography subject
+	 */
 	String subject;
 	
+	/**
+	 * General contructor
+	 * @param firstName First name of Biography's author
+	 * @param lastName Last name of Biography's author
+	 * @param title Title of the biography
+	 * @param yearPublished Year of publication
+	 * @param subject Subject of the biography
+	 * @throws Exception
+	 */
 	public Biography(Name firstName, Name lastName, String title, int yearPublished, String subject) throws Exception{
 		super(firstName, lastName, title, yearPublished);
 		setSubject(subject);
 	}
 	
+	/**
+	 * Sets the subject
+	 * @param subject Subject of biography
+	 */
 	public void setSubject(String subject) {
 		this.subject = subject;
 	}
 	
+	/**
+	 * Gets the Subject of biography
+	 * @return Subject of biography
+	 */
 	public String getSubject() {
 		return subject;
 	}
@@ -57,6 +82,4 @@ public class Biography extends Book {
 	
 	
 	
-	
-
 }

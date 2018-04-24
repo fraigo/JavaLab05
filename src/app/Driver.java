@@ -5,9 +5,15 @@ import lab05.Book;
 import lab05.BookStore;
 import lab05.Name;
 
+/**
+ * Driver class
+ * @author Francisco Igor
+ *
+ */
 public class Driver {
 
 	/**
+	 * Main program
 	 * @param args
 	 */
 	public static void main(String[] args) {

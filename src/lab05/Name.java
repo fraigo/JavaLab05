@@ -1,13 +1,32 @@
 package lab05;
 
+/**
+ * Name class
+ * Used to store and validate the forst and last name 
+ * @author Francisco Igor
+ *
+ */
 public class Name {
 
+	/**
+	 * Name (first or last) 
+	 */
 	String name;
 	
+	/**
+	 * Basic constructor 
+	 * @param name Name
+	 * @throws Exception
+	 */
 	public Name(String name) throws Exception{
 		setName(name);
 	}
 	
+	/**
+	 * Sets the name
+	 * @param name Name
+	 * @throws Exception
+	 */
 	public void setName(String name) throws Exception{
 		if (name==null){
 			throw new InvalidArgumentException("String must not be null");
